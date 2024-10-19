@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".membershipActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greetingTextView"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/manageMembership1"
+            android:layout_gravity="center"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/yellow"
+                    android:src="@drawable/membership"
+                    android:padding="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membership"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:id="@+id/nameTxt"/>
+
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailTxt"/>
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:id="@+id/ContactTxt"/>
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Adhara Number"
+            android:inputType="number"
+            android:id="@+id/adharaTxt1"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ddYyMmCard">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="date"
+            android:hint="YY/MM/DD"
+            android:id="@+id/startDate"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:inputType="date"
+            android:hint="YY/MM/DD"
+            android:id="@+id/EndDate"/>
+        </androidx.cardview.widget.CardView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/membershipRBtn1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminRadioBtnSixMonth"
+                android:text="six Month"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminRadioBtn1yr"
+                android:text="1 year"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminRadioBtn2yr"
+                android:text="2 year"/>
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnConfirm"
+            android:textColor="@color/black"
+            android:text="Confirm"
+            android:textAllCaps="false"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnCansel"
+            android:textColor="@color/black"
+            android:text="Cansel"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

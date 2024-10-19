@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReturnBookTr">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Library Management"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/tv_check_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Book Availability:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Book Name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_check_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Availability"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_return_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Book:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Author"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_return_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Book"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tv_issue_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Book:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_issue_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Book Name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_issue_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Book"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tv_pay_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Fine:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_serial_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pay_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Fine"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_issue_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Date:"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_issue_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Issue Date"/>
+
+    <TextView
+        android:id="@+id/tv_return_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Date:"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_return_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Return Date"/>
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remarks:"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Remarks"
+        android:lines="3"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

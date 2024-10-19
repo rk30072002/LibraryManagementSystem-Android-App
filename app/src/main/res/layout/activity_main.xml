@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/HomePageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcome Home Page"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/maintenanceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenance"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reportsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reports"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transactionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transactions"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/productDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:textStyle="bold"
+        android:paddingBottom="10dp" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableLayout>
+            <TextView
+                android:text="Code No From"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Code No To"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Category"
+                android:padding="8dp"
+                android:textStyle="bold" />
+        </TableLayout>
+
+        <TableRow>
+            <TextView
+                android:text="SC(B/M)000001"
+                android:padding="8dp" />
+            <TextView
+                android:text="SC(B/M)000004"
+                android:padding="8dp" />
+            <TextView
+                android:text="Science"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="EC(B/M)000001"
+                android:padding="8dp" />
+            <TextView
+                android:text="EC(B/M)000004"
+                android:padding="8dp" />
+            <TextView
+                android:text="Economics"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="FC(B/M)000001"
+                android:padding="8dp" />
+            <TextView
+                android:text="FC(B/M)000004"
+                android:padding="8dp" />
+            <TextView
+                android:text="Fiction"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="CH(B/M)000001"
+                android:padding="8dp" />
+            <TextView
+                android:text="CH(B/M)000004"
+                android:padding="8dp" />
+            <TextView
+                android:text="Children"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="PD(B/M)000001"
+                android:padding="8dp" />
+            <TextView
+                android:text="PD(B/M)000004"
+                android:padding="8dp" />
+            <TextView
+                android:text="Personal Development"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginEnd="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out" />
+    </LinearLayout>
+
+</LinearLayout>

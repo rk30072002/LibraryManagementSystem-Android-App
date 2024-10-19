@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportsActivity">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Reports"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/masterListBooksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Master List of Books" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/masterListMoviesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Master List of Movies" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/masterListMembershipsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Master List of Memberships" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activeIssuesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active Issues" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/overdueReturnsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overdue Returns" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pendingIssueRequestsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Issue Requests" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" home will take to User/ADMIN Home Page"
+        android:paddingTop="16dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

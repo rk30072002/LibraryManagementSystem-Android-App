@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".deleteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greetingTextView"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/deleteBook1"
+            android:layout_gravity="center"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/red"
+                    android:src="@drawable/delete"
+                    android:padding="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Book"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <EditText
+
+            android:id="@+id/bookTitle1"
+            android:layout_width="370dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:hint="Book title"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+
+            android:id="@+id/authorName1"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Author Name"
+            android:layout_marginTop="20dp"/>
+        <EditText
+
+            android:id="@+id/sellingPrice1"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:hint="Book Price"
+            android:layout_marginTop="20dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/deleteBookBtn1"
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>

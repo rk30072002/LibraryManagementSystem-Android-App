@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateMembership">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/updateMembership"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/blue"
+                    android:src="@drawable/membership"
+                    android:padding="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_member"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Membership Number"
+            android:inputType="number"
+            android:id="@+id/membershipNumber"/>
+
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:hint="start Date"
+        android:inputType="date"
+        android:id="@+id/startTxt1"/>
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:hint="End Date"
+        android:inputType="number"
+        android:id="@+id/endDate1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/membershipRBtn1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminRadioBtnSixMonth"
+            android:text="six Month"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminRadioBtn1yr"
+            android:text="1 year"/>
+
+       <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminRadioBtn2yr"
+        android:text="2 year"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/membershipRemove">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminRadioBtnRemove"
+            android:text="Remove"/>
+
+    </RadioGroup>
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="370dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/btnConfirm1"
+    android:textColor="@color/black"
+    android:text="Confirm"
+    android:textAllCaps="false"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnCansel1"
+        android:textColor="@color/black"
+        android:text="Cansel"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>

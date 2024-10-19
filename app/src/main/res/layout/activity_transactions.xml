@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransactionsActivity">
+
+    <TextView
+        android:id="@+id/transactions_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_check_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is book available?"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_issue_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Issue book?"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_return_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return book?"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_pay_fine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Fine?"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:padding="16dp" />
+
+</LinearLayout>
